@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initical-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-div">
+          <label id="name-label" for="name">Name </label><input id="name" type="text" placeholder="Name goes here..." required />
+        </div>
+        <div class="form-div">
+          <label id="email-label" for="email">Email </label><input id="email" type="email" placeholder="Email goes here..." required />
+        </div>
+        <div class="form-div">
+          <label id="number-label" for="">Age (optional) </label><input id="number" type="number" placeholder="Age goes here..." min="12" max="100" />
+        </div>
+        <div class="form-div">
+          <label for="">Which option best describes your current role?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Teacher</option>
+              <option value"3">Full Time Learner</option>
+              <option value="4">Full Time Entrepreneur</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-div">
+          <p>
+            Would you recommend freeCodeCamp to a friend?
+          </p>
+          <label for="Yes"><input id="Yes" value="Yes" name="recommend?" type="radio" checked /> Definitely</label>
+          <label for="Yes-No"><input id="Yes-No" name="recommend?" value="Yes-No" type="radio" /> Maybe</label>
+          <label for="No"><input id="No" name="recommend?" value="No" type="radio" /> Not Sure</label>
+        </div>
+        <div class="form-div">
+          <label for="">What is your favorite feature of freeCodeCamp?
+            <select>
+              <option value="">(select one)</option>
+              <option value="a">Student</option>
+              <option value="b">Teacher</option>
+              <option value="c">Full Time Learner</option>
+              <option value="d">Full Time Entrepreneur</option>
+              <option value="e">Other</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-div">
+          <label for=""> 
+            What would you like to see improved? <span>(Check all that apply)</span>
+            <input value="SEO" type="checkbox"> SEO
+            <input value="Support" type="checkbox"> Costumer Service
+            <input value="web-des" type="checkbox"> Web Design
+            <input value="web-dev" type="checkbox"> Web Dev
+            <input value="nothing" type="checkbox"> Love 'em All
+            <input value="other" type="checkbox"> Other
+          </label>
+        </div>
+        <div class="form-div">
+          <textarea rows="4" cols="60"></textarea>
+        </div>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
